@@ -1,0 +1,166 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Ahmed Mujtaba Butt}
+
+\personalinfo{
+  \email{ahmedmujtababutt02@gmail.com}
+  \phone{+92 (333) 869-4728}
+  \location{Rawalpindi, Pakistan}
+  \homepage{ahmedmujtaba.pages.dev}
+  \linkedin{ahmed-mujtaba-butt}
+  \github{ahmedmbutt}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{IT Intern}{One Network}{Aug 2023 -- Sep 2023}{}
+\begin{itemize}
+\item Conducted Data Cleaning, Annotation, and Augmentation
+\item Assisted in developing an Auto-Vehicle Categorization (AVC) project using semi-supervised learning approach based on YOLOv8
+\item Supported deployment of AVC on motorways and toll plazas
+\item Conducted Internal Testing of M-Tag One Network App
+\end{itemize}
+
+\divider
+
+\cvevent{Python Developer}{Skillibility}{Sep 2022 -- Oct 2022}{}
+\begin{itemize}
+\item Developed a Resume Parser module in Python that aimed to extract relevant information from resumes
+\item Evaluated the module on a diverse set of resumes and achieved an accuracy rate of 80-85\% through multiple revisions
+\end{itemize}
+
+\divider
+
+\cvevent{Student Volunteer}{Pakistan Red Crescent Society (PRCS)}{Aug 2022}{}
+\begin{itemize}
+\item Spread awareness among the community on animal welfare
+\item Interviewed a veterinarian on animal cruelty and their rights
+\item Delivered presentations to orphanage kids on animal care
+\item Designed and distributed brochures on animal care and rights
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Shakespeare's Writing Generator}{Python, TensorFlow}{}{}
+A deep learning model to generate Shakespeare's writing using a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM) cells
+
+\divider
+
+\cvevent{Stop Sign Classification}{Python, PyTorch}{}{}
+A deep learning model to classify stop signs from images using transfer learning from a pre-trained ResNet-18 model
+
+\divider
+
+\cvevent{Heart Failure Prediction}{Python, scikit-learn}{}{}
+A machine learning model to predict the mortality rate of patients suffering from heart failure by evualating various machine learning algorithms and selecting the best one
+
+\divider
+
+For more information on my projects, please visit my GitHub profile @ \href{https://github.com/ahmedmbutt}{ahmedmbutt}
+
+\switchcolumn
+
+\cvsection{Education}
+
+\cvevent{B.E.\ in Software Engineering}{National University of Sciences \& Technology (NUST)}{Nov 2020 -- Ongoing}{}
+CGPA: 3.90
+
+\divider
+
+\cvevent{A-Level}{St. Mary's Academy}{2018 -- 2020}{}
+Grades: 4A*
+
+\divider
+
+\cvevent{O-Level}{St. Mary's Academy}{2015 -- 2018}{}
+Grades: 5A* 3A 1B
+
+\cvsection{Skills}
+
+\cvtag{Keras}\cvtag{TensorFlow}\cvtag{PyTorch}\cvtag{OpenCV}\\
+
+\smallskip
+
+\cvtag{MongoDB}\cvtag{Express.js}\cvtag{React}\cvtag{Node.js}\\
+
+\smallskip
+
+\cvtag{C}\cvtag{C++}\cvtag{Java}\cvtag{Python}\cvtag{JavaScript}\\
+
+\smallskip
+
+\cvtag{SQL}\cvtag{MySQL}\cvtag{Assembly}\cvtag{MATLAB}\\
+
+\cvsection{Certifications}
+
+\cvachievement{\faAward}{Machine Learning with Python}{Coursera | IBM}
+
+\divider
+
+\cvachievement{\faAward}{Introduction to Computer Vision and Image Processing}{Coursera | IBM}
+
+\divider
+
+\cvachievement{\faAward}{Natural Language Processing in TensorFlow}{Coursera | DeepLearning.AI}
+
+\cvsection{Publications}
+
+\cvachievement{\faFile*[regular]}{Using PCA for Data Reduction and Face Recognition on LFW Dataset}{Medium | Python in Plain English}
+
+\divider
+
+\cvachievement{\faFile*[regular]}{How to Handle Missing Data???}{Medium | Python in Plain English}
+
+\divider
+
+\cvachievement{\faFile*[regular]}{From HTML to Node.js: 12 Mini Web Projects to Boost Your Web Development Skills}{Medium}
+
+\divider
+
+For more of my writing, check out my articles on Medium @ \href{https://medium.com/@ahmedmbutt}{ahmedmbutt}
+
+\end{paracol}
+
+\end{document}
