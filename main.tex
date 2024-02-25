@@ -3,6 +3,7 @@
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
 \usepackage{paracol}
+\usepackage{multicol}
 
 \ifxetexorluatex
   \setmainfont{Roboto Slab}
@@ -16,9 +17,11 @@
 
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
+% \definecolor{DarkGrey}{HTML}{333333}
 \definecolor{DarkPastelRed}{HTML}{450808}
 \definecolor{PastelRed}{HTML}{8F0D0D}
 \definecolor{GoldenEarth}{HTML}{E7D192}
+
 \colorlet{name}{black}
 \colorlet{tagline}{PastelRed}
 \colorlet{heading}{DarkPastelRed}
@@ -27,6 +30,7 @@
 \colorlet{accent}{PastelRed}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
+% \colorlet{body}{DarkGrey}
 
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
@@ -56,7 +60,17 @@
 
 \cvsection{Experience}
 
-\cvevent{IT Intern}{One Network}{Aug 2023 -- Sep 2023}{}
+\cvevent{Backend Developer}{Bizwitt}{Oct 2023 -- Ongoing}{Remote}
+
+\begin{itemize}
+\item Developed mobile and web app backends using Dart and JavaScript with Firebase and SQLite
+\item Spearheaded a team of fellow classmates, ensuring timely project delivery and adherence to client requirements
+\end{itemize}
+
+\divider
+
+\cvevent{AI/ML Intern}{One Network}{Aug 2023 -- Sep 2023}{On-site}
+
 \begin{itemize}
 \item Conducted data cleaning, annotation, and augmentation
 \item Assisted in developing an Auto-Vehicle Categorization (AVC) project using a semi-supervised learning approach based on YOLOv8
@@ -66,7 +80,8 @@
 
 \divider
 
-\cvevent{Python Developer}{Skillibility}{Sep 2022 -- Oct 2022}{}
+\cvevent{Python Developer}{Skillibility}{Sep 2022 -- Oct 2022}{Hybrid}
+
 \begin{itemize}
 \item Developed a Python-based Resume Parser module to extract relevant information from resumes
 \item Achieved an 80-85\% accuracy rate after multiple module revisions
@@ -74,30 +89,49 @@
 
 \divider
 
-\cvevent{Student Volunteer}{Pakistan Red Crescent Society (PRCS)}{Aug 2022}{}
-\begin{itemize}
-\item Raised community awareness on animal welfare
-\item Conducted interviews with veterinarians about animal cruelty and rights
-\item Delivered presentations on animal care to orphanage children
-\item Designed and distributed brochures on animal care and rights
-\end{itemize}
+\cvevent{Student Volunteer}{Pakistan Red Crescent Society (PRCS)}{Aug 2022}{On-site}
+
+% \begin{itemize}
+% \item Raised community awareness on animal welfare
+% \item Conducted interviews with veterinarians about animal cruelty and rights
+% \item Delivered presentations on animal care to orphanage children
+% \item Designed and distributed brochures on animal care and rights
+% \end{itemize}
 
 \cvsection{Projects}
 
-\cvevent{Shakespeare's Writing Generator}{Python, TensorFlow}{}{}
-Created a deep learning model using Recurrent Neural Networks (RNN) with Long Short-Term Memory (LSTM) cells to generate Shakespearean writing
+\cvevent{AI Gallery Genie - Where Images Meet Intelligence}{Final Year Project}{}{}
 
-\divider
+A cross-platform mobile application that provides a comprehensive set of features for managing and enhancing image galleries using advanced AI and machine learning techniques
 
-\cvevent{Stop Sign Classification}{Python, PyTorch}{}{}
-Developed a deep learning model for stop sign classification using transfer learning from a pre-trained ResNet-18 model
+\setlength{\columnsep}{0.25cm}
+\setlength{\multicolsep}{0.25cm}
 
-\divider
+\begin{multicols}{3}
+\begin{itemize}
+\item Blur Detection
+\item Tags Generation
+\item Emotion Detection
+\item Caption Generation
+\item Image Categorization
 
-\cvevent{Heart Failure Prediction}{Python, scikit-learn}{}{}
-Built a machine learning model to predict the mortality rate of patients with heart failure by evaluating various machine learning algorithms
+\item Face Grouping
+\item Semantic Search
+\item Text Recognition
+\item Image Enhancement
+\item Artistic Style Transfer
+
+\item Change Objects
+\item Remove Objects
+\item Image Generation
+\item Multimodal Chatbot
+\item Edit Images with Prompt
+\end{itemize}
+\end{multicols}
 
 \switchcolumn
+
+\smallskip
 
 \cvsection{Education}
 
@@ -116,19 +150,21 @@ Achieved 5A*, 3A, and 1B grades
 
 \cvsection{Skills}
 
+\cvtag{C}\cvtag{C++}\cvtag{Java}\cvtag{Python}\cvtag{JavaScript}\\
+
+\medskip
+
 \cvtag{Keras}\cvtag{TensorFlow}\cvtag{PyTorch}\cvtag{OpenCV}\\
 
-\smallskip
+\medskip
+
+\cvtag{Dart}\cvtag{Flutter}\cvtag{Firebase}\cvtag{SQL}\cvtag{MySQL}\\
+
+\medskip
 
 \cvtag{MongoDB}\cvtag{Express.js}\cvtag{React}\cvtag{Node.js}\\
 
 \smallskip
-
-\cvtag{C}\cvtag{C++}\cvtag{Java}\cvtag{Python}\cvtag{JavaScript}\\
-
-\smallskip
-
-\cvtag{SQL}\cvtag{MySQL}\cvtag{Assembly}\cvtag{MATLAB}\\
 
 \cvsection{Certifications}
 
@@ -142,6 +178,10 @@ Achieved 5A*, 3A, and 1B grades
 
 \cvachievement{\faAward}{Natural Language Processing in TensorFlow}{Coursera | DeepLearning.AI}
 
+\divider
+
+\cvachievement{\faAward}{Generative Deep Learning with TensorFlow}{Coursera | DeepLearning.AI}
+
 \cvsection{Publications}
 
 \cvachievement{\faFile*[regular]}{Using PCA for Data Reduction and Face Recognition on LFW Dataset}{Medium | Python in Plain English}
@@ -150,9 +190,9 @@ Achieved 5A*, 3A, and 1B grades
 
 \cvachievement{\faFile*[regular]}{How to Handle Missing Data}{Medium | Python in Plain English}
 
-\divider
+% \divider
 
-\cvachievement{\faFile*[regular]}{From HTML to Node.js: 12 Mini Web Projects to Boost Your Web Development Skills}{Medium}
+% \cvachievement{\faFile*[regular]}{From HTML to Node.js: 12 Mini Web Projects to Boost Your Web Development Skills}{Medium}
 
 \end{paracol}
 
