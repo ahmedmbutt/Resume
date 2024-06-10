@@ -3,7 +3,7 @@
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
 \usepackage{paracol}
-\usepackage{multicol}
+% \usepackage{multicol}
 
 \ifxetexorluatex
   \setmainfont{Roboto Slab}
@@ -17,7 +17,6 @@
 
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-% \definecolor{DarkGrey}{HTML}{333333}
 \definecolor{DarkPastelRed}{HTML}{450808}
 \definecolor{PastelRed}{HTML}{8F0D0D}
 \definecolor{GoldenEarth}{HTML}{E7D192}
@@ -30,7 +29,6 @@
 \colorlet{accent}{PastelRed}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
-% \colorlet{body}{DarkGrey}
 
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
@@ -60,16 +58,27 @@
 
 \cvsection{Experience}
 
-\cvevent{Backend Developer}{Bizwitt}{Oct 2023 -- Ongoing}{Remote}
+\cvevent{AI Backend Engineer}{CloudGate}{Apr 2024 -- Ongoing}{}
 
 \begin{itemize}
-\item Developed mobile and web app backends using Dart and JavaScript with Firebase and SQLite
-\item Spearheaded a team of fellow classmates, ensuring timely project delivery and adherence to client requirements
+\item Developed pipelines for text-based image generation, instruction-based image editing, background removal, and image variations
+\item Deployed pipelines on HuggingFace Inference Endpoints for enhanced security and scalability
 \end{itemize}
 
 \divider
 
-\cvevent{AI/ML Intern}{One Network}{Aug 2023 -- Sep 2023}{On-site}
+\cvevent{Mobile Backend Developer}{Bizwitt}{Oct 2023 -- Apr 2024}{}
+
+\begin{itemize}
+\item Developed backend for mobile applications using Flutter
+\item Implemented Firebase for user authentication and data storage
+\item Integrated RESTful APIs for data retrieval and manipulation
+\item Led the development of mobile applications ensuring timely delivery and quality assurance
+\end{itemize}
+
+\divider
+
+\cvevent{AI/ML Intern}{One Network}{Aug 2023 -- Sep 2023}{}
 
 \begin{itemize}
 \item Conducted data cleaning, annotation, and augmentation
@@ -80,16 +89,16 @@
 
 \divider
 
-\cvevent{Python Developer}{Skillibility}{Sep 2022 -- Oct 2022}{Hybrid}
+\cvevent{Python Developer}{Skillibility}{Sep 2022 -- Oct 2022}{}
 
 \begin{itemize}
 \item Developed a Python-based Resume Parser module to extract relevant information from resumes
 \item Achieved an 80-85\% accuracy rate after multiple module revisions
 \end{itemize}
 
-\divider
+% \divider
 
-\cvevent{Student Volunteer}{Pakistan Red Crescent Society (PRCS)}{Aug 2022}{On-site}
+% \cvevent{Student Volunteer}{Pakistan Red Crescent Society (PRCS)}{Aug 2022}{}
 
 % \begin{itemize}
 % \item Raised community awareness on animal welfare
@@ -102,36 +111,52 @@
 
 \cvevent{AI Gallery Genie - Where Images Meet Intelligence}{Final Year Project}{}{}
 
-A cross-platform mobile application that provides a comprehensive set of features for managing and enhancing image galleries using advanced AI and machine learning techniques
+% A cross-platform mobile application that provides a comprehensive set of features for managing and enhancing image galleries using advanced AI and machine learning techniques
+A cross-platform mobile application that provides a comprehensive set of features to users using advanced AI and ML techniques
+% A cross-platform mobile app enhancing image galleries with AI and ML techniques
+% A mobile app revolutionizing galleries using AI/ML techniques
 
-\setlength{\columnsep}{0.25cm}
-\setlength{\multicolsep}{0.25cm}
+\medskip
 
-\begin{multicols}{3}
 \begin{itemize}
-\item Blur Detection
-\item Tags Generation
-\item Emotion Detection
-\item Caption Generation
-\item Image Categorization
-
-\item Face Grouping
-\item Semantic Search
-\item Text Recognition
-\item Image Enhancement
-\item Artistic Style Transfer
-
-\item Change Objects
-\item Remove Objects
-\item Image Generation
-\item Multimodal Chatbot
-\item Edit Images with Prompt
+\item Integrated emotion detection, tag generation, caption generation, text recognition, and artistic style transfer
+\item Implemented auto-categorization, semantic searching and multimodal chatbot capabilities
+\item Incorporated text-to-image, image-to-image, and inpainting features using SD-Turbo models
 \end{itemize}
-\end{multicols}
+
+% \setlength{\columnsep}{0.25cm}
+% \setlength{\multicolsep}{0.25cm}
+
+% \begin{multicols}{3}
+% \begin{itemize}
+% \item Tags Generation
+% \item Emotion Detection
+% % \item Caption Generation
+
+% \item Semantic Search
+% \item Text Recognition
+% % \item Image Enhancement
+% \item Multimodal Chatbot
+% \item Artistic Style Transfer
+
+% \item Text-to-Image
+% \item Image-to-Image
+% \item InPainting
+% \end{itemize}
+% \end{multicols}
+
+% \divider
+
+% \cvevent{CloudGate Generative AI}{Industry Project}{}{}
+
+% \begin{itemize}
+% \item Developed pipelines for text-based image generation, instruction-based image editing, background removal, and image variations
+% \item Deployed pipelines on HuggingFace Inference Endpoints for enhanced security and scalability
+% \end{itemize}
 
 \switchcolumn
 
-\smallskip
+% \smallskip
 
 \cvsection{Education}
 
@@ -150,19 +175,19 @@ Achieved 5A*, 3A, and 1B grades
 
 \cvsection{Skills}
 
-\cvtag{C}\cvtag{C++}\cvtag{Java}\cvtag{Python}\cvtag{JavaScript}\\
+\cvtag{TensorFlow}\cvtag{PyTorch}\cvtag{HuggingFace}\\
 
 \medskip
 
-\cvtag{Keras}\cvtag{TensorFlow}\cvtag{PyTorch}\cvtag{OpenCV}\\
-
-\medskip
-
-\cvtag{Dart}\cvtag{Flutter}\cvtag{Firebase}\cvtag{SQL}\cvtag{MySQL}\\
+\cvtag{C} \cvtag{C++} \cvtag{Java} \cvtag{Python} \cvtag{JavaScript}\\
 
 \medskip
 
 \cvtag{MongoDB}\cvtag{Express.js}\cvtag{React}\cvtag{Node.js}\\
+
+\medskip
+
+\cvtag{Dart}\cvtag{Flutter}\cvtag{Firebase}\cvtag{SQL}\cvtag{FastAPI}\\
 
 \smallskip
 
@@ -181,6 +206,11 @@ Achieved 5A*, 3A, and 1B grades
 \divider
 
 \cvachievement{\faAward}{Generative Deep Learning with TensorFlow}{Coursera | DeepLearning.AI}
+
+\divider
+
+\cvachievement{\faAward}{Finetuning Large Language Models
+}{Coursera | DeepLearning.AI}
 
 \cvsection{Publications}
 
